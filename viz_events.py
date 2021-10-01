@@ -4,9 +4,6 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 
-def add(a,b):
-    return a+b
-
 def render(x, y, t, p, shape):
     img = np.full(shape=shape + [3], fill_value=255, dtype="uint8")
     img[y, x, :] = 0
